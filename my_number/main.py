@@ -1,4 +1,4 @@
-from my_number.my_number import return_number
+from my_number import return_number
 import phonenumbers
 from phonenumbers import geocoder, carrier
 from opencage.geocoder import OpenCageGeocode
@@ -26,6 +26,3 @@ folium.Marker([lat, lng], popup = your_location).add_to(map)
 
 number_info = f"\tКординаты: {lat, lng}\n\tОператор: {operator}\n\tМестоположение: {your_location}"
 print(f"---Номер: {phone_number_get}---\n{number_info}")
-
-map.save("my_location.html")
-open("../my_location.html")
